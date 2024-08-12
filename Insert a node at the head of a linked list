@@ -1,0 +1,14 @@
+#Insert a node at the head of a linked list
+class SinglyLinkedListNode:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+
+def insertNodeAtHead(llist, data):
+    # Create a new node with the given data
+    new_node = SinglyLinkedListNode(data)
+    # Point the new node to the current head of the list
+    new_node.next = llist
+    # Return the new node as the new head of the list
+    return new_node
